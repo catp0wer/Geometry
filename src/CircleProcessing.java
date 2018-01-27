@@ -11,5 +11,27 @@ public class CircleProcessing {
        // System.out.printf("The sum is %.2f ",sum);
         return circleAreas;
     }
+    public double getMin(double circleAreas[]){
+        double min = circleAreas[0];
+        for(int i=0;i<circleAreas.length;i++){
+            if(min>circleAreas[i]){
+                min= circleAreas[i];
+            }
+        }
+        System.out.println("Min area is: " +min);
+        return min;
+    }
+
+    public double getMax(double circleAreas[]){
+        double max = circleAreas[0];
+        for(int i=0;i<circleAreas.length;i++){
+            if(max<circleAreas[i]){
+                max= circleAreas[i];
+            }
+        }
+        System.out.println("Max area is: " +max);
+        return max;
+    }
+
 
 }

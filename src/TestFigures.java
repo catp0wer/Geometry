@@ -12,7 +12,11 @@ public class TestFigures {
         Circle myArray[] = createCircle(number);
         CircleProcessing circlePro = new CircleProcessing();
         double myArrayAreas[] = circlePro.getAreas(myArray);
+        circlePro.getMin(myArrayAreas);
+        circlePro.getMax(myArrayAreas);
 
+        Rectangle rectangle = new Rectangle(10, 4);
+        rectangle.getArea();
     }
 
     private static Circle[] createCircle(int n) {
