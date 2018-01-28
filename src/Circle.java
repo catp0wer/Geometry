@@ -2,7 +2,7 @@ import java.lang.Math;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class Circle {
+public class Circle extends Shape {
     private double radius;
     private double area;
 
